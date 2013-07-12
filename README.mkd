@@ -30,9 +30,11 @@ Then add the libraries to Eagle:
     * ulp
     * scr
     * cam
+### Windows ###
 
+Work In Progress. If you use Windows and have configured, please document and open a PR.
 
-## Contibutions ##
+## Contributions ##
 
 To contribute to the CARA Eagle Library, please [create your own fork of the
 arcc/eagle repository][fork] and commit changes to your own repository. Then
