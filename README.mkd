@@ -1,0 +1,51 @@
+CARA Eagle Files
+================
+
+This repository is home to the Center of Advanced Radio Astronomy's Cadsoft
+Eagle support files. 
+
+[Cadsoft Eagle][eagle] is a circuit and pcb design software used for
+electronics design within CARA. CARA has standardized on Eagle major version 6,
+so all libraries contained within are not compatible with Eagle 5 or older. At
+the time of writing (7/2013), the libraries are Eagle 6.4 compatible.
+
+
+## Installation ##
+
+### Linux/OSX ###
+
+
+Clone the git repo to your system. For this guide, I will assume it is cloned to
+`~/caraeagle`
+
+    git clone git@github.com:arcc/eagle ~/caraeagle
+
+Then add the libraries to Eagle:
+
+1. Launch Eagle
+2. On the Eagle Control Pannel, go to Options > Directories
+3. Add `$HOME/.caraeagle/XXX:`, where XXX is one of the following
+    * lbr
+    * dru
+    * ulp
+    * scr
+    * cam
+
+
+## Contibutions ##
+
+To contribute to the CARA Eagle Library, please [create your own fork of the
+arcc/eagle repository][fork] and commit changes to your own repository. Then
+[open a pull-request][pr] and justify/describe your changes.
+
+After a senior Eagle Team member has verified your changes and validated that
+they check out, [they will be merged][merge]. 
+
+_Note:_ It is not acceptable to commit changes directly to the CARA eagle
+repository. Please do all work within your own forks.
+
+[eagle]: http://www.cadsoftusa.com/eagle-pcb-design-software/
+[fork]: https://help.github.com/articles/fork-a-repo
+[pr]: https://help.github.com/articles/fork-a-repo
+[merge]: https://help.github.com/articles/merging-a-pull-request
+
