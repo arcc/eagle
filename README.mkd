@@ -44,6 +44,7 @@ they check out, [they will be merged][merge].
 _Note:_ It is not acceptable to commit changes directly to the CARA eagle
 repository. Please do all work within your own forks.
 
+[eagle]: http://www.cadsoftusa.com/eagle-pcb-design-software/
 [fork]: https://help.github.com/articles/fork-a-repo
 [pr]: https://help.github.com/articles/fork-a-repo
 [merge]: https://help.github.com/articles/merging-a-pull-request
