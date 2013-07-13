@@ -109,7 +109,7 @@
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <library>
-<description>Minicircuits filters. Currently has footprints for HF1139 case style.</description>
+<description>CARA parts library. For more info, see http://www.github.com/arcc/eagle</description>
 <packages>
 <package name="VISHAY_564RC">
 <wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.127" layer="21"/>
@@ -1702,6 +1702,13 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <wire x1="-0.508" y1="-1.27" x2="0.508" y2="-1.27" width="0.127" layer="51"/>
 <text x="-1.905" y="1.524" size="0.762" layer="25">&gt;NAME</text>
 </package>
+<package name="MURATA_1210">
+<smd name="P$1" x="-1.778" y="0" dx="3.556" dy="2.032" layer="1" rot="R90"/>
+<smd name="P$2" x="1.778" y="0" dx="3.556" dy="2.032" layer="1" rot="R90"/>
+<wire x1="-0.635" y1="1.905" x2="0.635" y2="1.905" width="0.127" layer="51"/>
+<wire x1="-0.635" y1="-1.905" x2="0.635" y2="-1.905" width="0.127" layer="51"/>
+<text x="-1.27" y="2.54" size="0.762" layer="51">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CAP">
@@ -2578,6 +2585,7 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 </devices>
 </deviceset>
 <deviceset name="COAX" prefix="CONN">
+<description>Collection of COAX connectors that pair with CARA Std parts</description>
 <gates>
 <gate name="CONN" symbol="CONN" x="0" y="0"/>
 </gates>
@@ -2654,6 +2662,15 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 </technologies>
 </device>
 <device name="1008" package="1008">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="MURATA_1210" package="MURATA_1210">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -2810,6 +2827,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 </devices>
 </deviceset>
 <deviceset name="FILTER" prefix="F" uservalue="yes">
+<description>Minicircuits filters. Currently has footprints for HF1139 case style.</description>
 <gates>
 <gate name="G$1" symbol="FILTER" x="0" y="0"/>
 </gates>
@@ -3137,6 +3155,7 @@ ULN2803 Darlington array. 500mA max per channel, 8-channel package. Spark Fun El
 </devices>
 </deviceset>
 <deviceset name="BOARDUINO">
+<description>Boarduino shield layout. Used for ACU DB25 shield. Proven.</description>
 <gates>
 <gate name="G$1" symbol="BOARDUINO" x="0" y="0"/>
 </gates>
