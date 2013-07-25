@@ -1,0 +1,14 @@
+Libraries that have proven useful for CARA. 
+
+Sparkfun Libraries are CC v3.0 Share-Alike, and taken from
+https://github.com/sparkfun/SparkFun-Eagle-Libraries. A great many thanks goes
+to the wonderful Eagle Gurus at Sparkfun for putting together the Eagle
+Libraries and their Eagle tutorials.
+
+The Minicircuits library is taken from the Eagle community download page. It's
+not everything, but does help.
+
+The CARA library is based of the personal library of Anthony Ford, and has
+since been expanded upon to include various parts used by CARA for LoFASM and
+other projects.
+
