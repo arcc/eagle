@@ -3834,7 +3834,7 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="VREG_FIXED">
+<deviceset name="VREG_FIXED" prefix="U" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="VREG_FIXED" x="0" y="0"/>
 </gates>
